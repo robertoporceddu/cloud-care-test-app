@@ -1,5 +1,5 @@
 ## Per testare la web application:
-- clona il repository col comando git clone ```https://github.com/robertoporceddu/cloud-care-test-app```
+- clona il repository col comando ```git clone https://github.com/robertoporceddu/cloud-care-test-app```
 - avvia Docker
 - da terminale esegui ```sail up``` e attendi il caricamento del container
 - terminato il caricamento esegui su un altro terminale ```sail artisan migrate```
