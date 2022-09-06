@@ -2,6 +2,8 @@
 
 namespace App\Services\PunkApi;
 
+use Symfony\Component\HttpKernel\Exception\HttpException;
+
 trait QueryAndResponse {
 
     private function query()
@@ -11,12 +13,13 @@ trait QueryAndResponse {
 
     private function response($response)
     {
-        if($response->status() != 200)
+        if($response->status() != 200 and $response->status() != 204)
         {
-            throw new \Exception(
-                $response->object()->message,
-                $response->object()->statusCode
+            throw new HttpException(
+                $response->status(),
+                $response->object()->message
             );
+
         }
 
         return $response->object();

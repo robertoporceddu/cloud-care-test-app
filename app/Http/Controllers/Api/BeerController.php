@@ -41,7 +41,7 @@ class BeerController extends Controller
     {
         $beer = new Beer();
 
-        return response()->json($beer->show($id));
+        return response()->json($beer->find($id));
     }
 
     /**
