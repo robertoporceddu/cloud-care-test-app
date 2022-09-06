@@ -30,7 +30,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::get('/get-api-token', [ AccountController::class, 'getApiToken'])->name('get-api-token');
+    Route::get('/get-api-token', [AccountController::class, 'getApiToken'])->name('get-api-token');
 });
 
 require __DIR__.'/auth.php';

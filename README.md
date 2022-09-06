@@ -2,7 +2,7 @@
 - clona il repository col comando git clone ```https://github.com/robertoporceddu/cloud-care-test-app```
 - avvia Docker
 - da terminale esegui ```sail up``` e attendi il caricamento del container
-- terminato il caricamento esegui sun un altro terminale ```sail artisan migrate```
+- terminato il caricamento esegui su un altro terminale ```sail artisan migrate```
 - compila ed esegui il fontend tramite il comando ```npm run dev```
 - collegati tramite browser alla pagina indicata dall'output del comando
 - registrati tramite il pulsante "Sign Up" e effettua il login per recuperare il token dell'API
